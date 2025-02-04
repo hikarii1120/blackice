@@ -26,7 +26,7 @@ sudo apt install python3-curses  # Para asegurar compatibilidad con curses
 
 Clona este repositorio:
 
-git clone https://github.com/tuusuario/black-ice.git
+git clone https://github.com/hikarii1120/black-ice.git
 cd black-ice
 
 🚀 Uso

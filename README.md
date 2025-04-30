@@ -1,55 +1,60 @@
-❄️ Black Ice - Detección y Prevención de Escaneos de Red 🚀
-❄️ Black Ice - Detección y Prevención de Escaneos de Red 🚀
+# ❄️ Black Ice – Network Scan Detection & Prevention 🚀
 
-Black Ice es una herramienta avanzada de seguridad en redes diseñada para detectar y prevenir escaneos de puertos y posibles ataques de reconocimiento. Utiliza scapy para analizar el tráfico de red en tiempo real y bloquea automáticamente las IPs sospechosas.
+**Black Ice** is an advanced network security tool built to detect and prevent port scans and reconnaissance attempts. It uses **Scapy** to analyze network traffic in real time and automatically blocks suspicious IP addresses.
 
-🛠️ Características
+---
 
-✅ Detección en Tiempo Real: Monitorea la red y detecta intentos de escaneo de puertos.✅ Bloqueo Automático: Añade reglas a iptables (Linux) para bloquear IPs maliciosas.✅ Interfaz Interactiva: Utiliza curses para una experiencia visual atractiva.✅ Registro de Eventos: Guarda un log con las IPs bloqueadas para auditoría.
+## 🛠️ Features
 
-📥 Instalación
+- ✅ **Real-Time Detection** – Monitors your network to spot port scan attempts.  
+- ✅ **Auto Blocking** – Adds firewall rules (iptables) to block malicious IPs on Linux.  
+- ✅ **Interactive Interface** – Uses **curses** for a clean, terminal-based UI.  
+- ✅ **Event Logging** – Keeps a log of all blocked IPs for audit purposes.
 
-🔹 Requisitos
+---
 
-Python 3.8+
+## 📥 Installation
 
-Linux (Ubuntu, Debian, Kali, etc.)
+### 🔹 Requirements
 
-Paquetes necesarios: scapy, curses
+- Python 3.8+  
+- Linux (Ubuntu, Debian, Kali, etc.)  
+- Required packages: `scapy`, `curses`
 
-🔹 Instalación de Dependencias
+### 🔹 Install Dependencies
 
-Ejecuta los siguientes comandos:
-
+```bash
 pip install scapy
-sudo apt install python3-curses  # Para asegurar compatibilidad con curses
+sudo apt install python3-curses  # Ensures curses compatibility
+Then clone the repo:
+```bash
+git clone https://github.com/hikarii1120/blackice
+cd blackice
 
-Clona este repositorio:
-
-git clone https://github.com/hikarii1120/blackice/blob/main/black_ice.py
-cd black-ice
-
-🚀 Uso
-
-Para ejecutar Black Ice, usa:
-
+🚀 Usage
+To run Black Ice:
 sudo python3 black_ice.py
 
-Desde el menú, puedes:
-1️⃣ Iniciar monitoreo de tráfico en la red.2️⃣ Revisar logs de IPs bloqueadas.3️⃣ Salir del programa.
+From the main menu, you can:
 
-⚠️ Notas Importantes
+1️⃣ Start network traffic monitoring
+2️⃣ View logs of blocked IPs
+3️⃣ Exit the program
 
-Ejecuta Black Ice como administrador (sudo) para que pueda modificar reglas de firewall.
+⚠️ Important Notes
+Run Black Ice with sudo so it can modify firewall rules.
 
-Funciona en Linux. Para Windows, es necesario un firewall alternativo en lugar de iptables.
+Built for Linux. On Windows, you'll need an alternative firewall (iptables not supported).
 
-Puedes ajustar el umbral de detección modificando THRESHOLD en el código.
+You can tweak the detection sensitivity by editing the THRESHOLD variable in the code.
 
-🤝 Contribuciones
+🤝 Contributions
+Pull requests, forks, and issue discussions are welcome!
+Feel free to suggest improvements or submit new features.
 
-¡Las contribuciones son bienvenidas! Puedes hacer un fork, proponer cambios en issues, o enviar un pull request.
+📜 License
+This project is licensed under the MIT License.
+You're free to use and modify it—just give credit to the original authors.
 
-📜 Licencia
 
-Este proyecto está bajo la licencia MIT. Puedes usarlo y modificarlo libremente, pero siempre dando crédito a los autores originales.
+
